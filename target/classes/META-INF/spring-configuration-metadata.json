@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "brisa",
+      "type": "com.orange.brisaEjemplo.util.BrisaProperties",
+      "sourceType": "com.orange.brisaEjemplo.util.BrisaProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "brisa.saludo",
+      "type": "java.lang.String",
+      "sourceType": "com.orange.brisaEjemplo.util.BrisaProperties"
+    }
+  ],
+  "hints": []
+}
