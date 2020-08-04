@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" strict="true">
 
-	<!-- Ruta para almecenas los "logs" -->
 	<Properties>
+	<!-- Ruta para almecenas los "logs" -->
 		<Property name="basePath">.\logs</Property>
+		<!-- Configuración del Pattern en los archivos de log -->
+		<Property name="LOG_PATTERN">
+			[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
+		</Property>
 	</Properties>
 
 	<!-- Personalización de los niveles -->
 	<CustomLevels>
 		<CustomLevel name="ACTIVITY" intLevel="350" />
 		<CustomLevel name="ADMON" intLevel="375" />
-		<CustomLevel name="ACCESS" intLevel="400" />
-
+		<CustomLevel name="ACCESS" intLevel="400" />/
 	</CustomLevels>
-
 
 	<Appenders>
 		<!-- Nombre de nuestro archivo de log -->
 		<RollingFile name="brisa-admon"
 			fileName="${basePath}/brisa-admon.log"
-			filePattern="${basePath}/brisa-admon-%d{yyyy-MM-dd}.log">
-			<!-- Aqui podemos definir un pattern para personalizar lo que nos muestra 
-				el log -->
-			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
-				</pattern>
-			</PatternLayout>
+			filePattern="${basePath}/brisa-admon-%d{yyyy-MM-dd}.log">		
+			  <PatternLayout pattern="${LOG_PATTERN}"/>
+			<maxSizeRollBackups value="0" /> <!-- Trunca el archivo al llegar al tamaño máximo -->
+			<maximumFileSize value="10MB" /> <!-- Tamaño máximo -->
 			<!-- Filtra el tipo de nivel que se guardará en el archivo de log -->
 			<LevelRangeFilter minLevel="ADMON" maxLevel="ADMON"
 				onMatch="ACCEPT" onMismatch="DENY" />
@@ -38,10 +37,9 @@
 		<RollingFile name="brisa-acceso"
 			fileName="${basePath}/brisa-acceso.log"
 			filePattern="${basePath}/brisa-acceso-%d{yyyy-MM-dd}.log">
-			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
-				</pattern>
-			</PatternLayout>
+			  <PatternLayout pattern="${LOG_PATTERN}"/>
+			<maxSizeRollBackups value="0" />
+			<maximumFileSize value="10MB" />
 			<LevelRangeFilter minLevel="ACCESS"
 				maxLevel="ACCESS" onMatch="ACCEPT" onMismatch="DENY" />
 			<Policies>
@@ -53,10 +51,9 @@
 		<RollingFile name="brisa-actividad"
 			fileName="${basePath}/brisa-actividad.log"
 			filePattern="${basePath}/brisa-actividad-%d{yyyy-MM-dd}.log">
-			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
-				</pattern>
-			</PatternLayout>
+			  <PatternLayout pattern="${LOG_PATTERN}"/>
+			<maxSizeRollBackups value="0" />
+			<maximumFileSize value="10MB" />
 			<LevelRangeFilter minLevel="ACTIVITY"
 				maxLevel="ACTIVITY" onMatch="ACCEPT" onMismatch="DENY" />
 			<Policies>
@@ -68,10 +65,9 @@
 		<RollingFile name="brisa-alerta"
 			fileName="${basePath}/brisa-alerta.log"
 			filePattern="${basePath}/brisa-alerta-%d{yyyy-MM-dd}.log">
-			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
-				</pattern>
-			</PatternLayout>
+			  <PatternLayout pattern="${LOG_PATTERN}"/>
+			<maxSizeRollBackups value="0" />
+			<maximumFileSize value="10MB" />
 			<LevelRangeFilter minLevel="WARN" maxLevel="WARN"
 				onMatch="ACCEPT" onMismatch="DENY" />
 			<Policies>
@@ -83,10 +79,9 @@
 		<RollingFile name="brisa-error"
 			fileName="${basePath}/brisa-error.log"
 			filePattern="${basePath}/brisa-error-%d{yyyy-MM-dd}.log">
-			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
-				</pattern>
-			</PatternLayout>
+			  <PatternLayout pattern="${LOG_PATTERN}"/>
+			<maxSizeRollBackups value="0" />
+			<maximumFileSize value="10MB" />
 			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR"
 				onMatch="ACCEPT" onMismatch="DENY" />
 			<Policies>
