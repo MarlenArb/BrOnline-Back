@@ -12,11 +12,11 @@ public class LogsExample {
 	private Logger logger = LogManager.getLogger(LogsExample.class);
 	
 	public void initLogs() {
-		logger.log(Level.forName("ACTIVITY", 350).getLevel("ACTIVITY"),"-----ACTIVIDAD");
-		logger.error("---- error");
-		//logger.log(Level.getLevel("ADMON"),375,"---- admon");		
+		logger.log(Level.getLevel("ACCESS"),"---- acceso");
+		logger.error("---- error------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		logger.log(Level.getLevel("ADMON"),"---- admon");		
 		logger.warn("---- alertas");	
-		//logger.log(Level.getLevel("ACTIVITY"),350, "---- actividad");
+		logger.log(Level.getLevel("ACTIVITY"), "---- actividad");
 	
 	}
 

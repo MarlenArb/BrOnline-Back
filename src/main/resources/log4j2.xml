@@ -23,7 +23,7 @@
 			<!-- Aqui podemos definir un pattern para personalizar lo que nos muestra 
 				el log -->
 			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
 				</pattern>
 			</PatternLayout>
 			<!-- Filtra el tipo de nivel que se guardará en el archivo de log -->
@@ -39,7 +39,7 @@
 			fileName="${basePath}/brisa-acceso.log"
 			filePattern="${basePath}/brisa-acceso-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
 				</pattern>
 			</PatternLayout>
 			<LevelRangeFilter minLevel="ACCESS"
@@ -54,7 +54,7 @@
 			fileName="${basePath}/brisa-actividad.log"
 			filePattern="${basePath}/brisa-actividad-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
 				</pattern>
 			</PatternLayout>
 			<LevelRangeFilter minLevel="ACTIVITY"
@@ -69,7 +69,7 @@
 			fileName="${basePath}/brisa-alerta.log"
 			filePattern="${basePath}/brisa-alerta-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
 				</pattern>
 			</PatternLayout>
 			<LevelRangeFilter minLevel="WARN" maxLevel="WARN"
@@ -84,7 +84,7 @@
 			fileName="${basePath}/brisa-error.log"
 			filePattern="${basePath}/brisa-error-%d{yyyy-MM-dd}.log">
 			<PatternLayout>
-				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
 				</pattern>
 			</PatternLayout>
 			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR"
@@ -97,7 +97,7 @@
 
 		<Console name="console" target="SYSTEM_OUT">
 			<PatternLayout disableAnsi="false"
-				pattern="%highlight{[%-5level]}{FATAL=red blink, ERROR=red, WARN=yellow bold, INFO=black, DEBUG=green bold, ACTIVITY=blue}%style{[%d{HH:mm:ss.SSS}] %logger{36}.%M() -- (MESSAGE) --> %msg%n}{white} " />
+				pattern="%highlight{[%-5level]}{ADMON=green bright, ERROR=red bright, WARN=yellow bright, ACCESS=magenta bright, DEBUG=blue, ACTIVITY=cyan bright,}{BG_White} %style{[%d{HH:mm:ss.SSS}] %logger{36}.%M() --}{white} %style{(MESSAGE)}{cyan} %style{--> %msg%n}{white} " />
 		</Console>
 
 		<!-- Modo Asincrono -->
