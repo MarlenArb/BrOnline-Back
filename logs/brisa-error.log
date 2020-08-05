@@ -1,7 +1,59 @@
-[ERROR] 2020-08-04 12:36:05.131 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-04 12:41:27.813 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-04 12:46:32.977 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] ---
-					CustomLogs.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-04 12:50:45.855 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] ---
-			CustomLogs.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-04 12:51:37.113 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:02:44.765 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:04:05.854 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:04:05.858 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+java.lang.Exception
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:23) [classes/:?]
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+[ERROR] 2020-08-04 14:10:04.782 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+ --- [ERROR] 2020-08-04 14:10:04.786 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+ --- java.lang.Exception
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:23)
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+[ERROR] 2020-08-04 14:11:30.512 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error ---  *****[ERROR] 2020-08-04 14:11:30.516 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error --- java.lang.Exception
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:23)
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+ *****[ERROR] 2020-08-04 14:12:29.423 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error ---  *****[ERROR] 2020-08-04 14:12:29.429 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error ---  *****[ERROR] 2020-08-04 14:14:05.337 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:14:05.340 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+java.lang.Exception
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:23) [classes/:?]
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+[ERROR] 2020-08-04 14:17:48.495 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:18:42.441 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:18:42.444 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-04 14:21:27.068 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:21:27.073 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-04 14:22:40.067 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:22:40.073 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-04 14:23:18.341 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:23:18.346 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-04 14:23:50.592 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:25:21.569 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-04 14:25:21.570 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> esto es un error
+java.lang.Exception
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:23) [classes/:?]
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]

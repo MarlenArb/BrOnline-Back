@@ -33,5 +33,9 @@ public class CustomLogs{
 		logger.error(message);	
 	}
 	
+	public void error(String message ,Exception error) {
+		logger.error(message,error);	
+	}
+	
 	
 }

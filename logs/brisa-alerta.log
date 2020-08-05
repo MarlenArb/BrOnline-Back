@@ -1,7 +1,11 @@
-[WARN ] 2020-08-04 12:36:05.131 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
-[WARN ] 2020-08-04 12:41:27.815 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
-[WARN ] 2020-08-04 12:46:32.978 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] ---
-					CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
-[WARN ] 2020-08-04 12:50:45.857 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] ---
-			CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
-[WARN ] 2020-08-04 12:51:37.114 [restartedMain] [com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:02:44.767 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:04:05.856 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:10:04.784 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+ --- [WARN ] 2020-08-04 14:11:30.513 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas ---  *****[WARN ] 2020-08-04 14:12:29.427 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas ---  *****[WARN ] 2020-08-04 14:14:05.338 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:17:48.496 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:18:42.442 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:21:27.070 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:22:40.069 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:23:18.342 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:23:50.593 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas
+[WARN ] 2020-08-04 14:25:21.570 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.alert() --- (MESSAGE) ---> ---- alertas

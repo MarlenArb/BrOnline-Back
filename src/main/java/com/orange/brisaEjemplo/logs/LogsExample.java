@@ -1,7 +1,6 @@
 package com.orange.brisaEjemplo.logs;
 
-
-
+import org.junit.platform.commons.function.Try;
 
 public class LogsExample  {
 	 
@@ -10,13 +9,24 @@ public class LogsExample  {
 	 private static CustomLogs logger= new CustomLogs();
 	  
 	//private Logger logger = LogManager.getLogger(LogsExample.class);
+	 
+
 	
 	public void initLogs() {
-		logger.access("---- acceso");
-		logger.error("---- error");
-		logger.admon("---- admon");		
-		logger.alert("---- alertas");	
-		logger.activity( "---- actividad");	
+			
+			try {
+				logger.access("---- acceso");
+				logger.error("---- error");
+				logger.admon("---- admon");				
+				logger.alert("---- alertas");	
+				logger.activity( "---- actividad");	
+				throw new Exception();
+			} catch (Exception e) {
+				// TODO: handle exception
+			
+				logger.error("esto es un error",e);
+			}
+		
 	}
 
 }
