@@ -1,11 +1,3 @@
-[ADMON] 2020-08-04 14:02:44.766 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:04:05.855 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:10:04.783 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
- --- [ADMON] 2020-08-04 14:11:30.513 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon ---  *****[ADMON] 2020-08-04 14:12:29.424 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon ---  *****[ADMON] 2020-08-04 14:14:05.337 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:17:48.495 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:18:42.442 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:21:27.069 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:22:40.068 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:23:18.341 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:23:50.593 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
-[ADMON] 2020-08-04 14:25:21.569 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
+[ADMON] 2020-08-06 11:33:42.744 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
+[ADMON] 2020-08-06 11:37:13.080 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon
+[ADMON] 2020-08-06 11:37:35.355 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.admon() --- (MESSAGE) ---> ---- admon

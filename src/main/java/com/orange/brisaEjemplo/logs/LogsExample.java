@@ -1,6 +1,6 @@
 package com.orange.brisaEjemplo.logs;
 
-
+import com.orange.brisaEjemplo.exception.ClienteUnprocessableException;
 
 public class LogsExample  {
 	 
@@ -19,8 +19,8 @@ public class LogsExample  {
 				logger.admon("---- admon");				
 				logger.alert("---- alertas");	
 				logger.activity( "---- actividad");	
-				throw new Exception();
-			} catch (Exception e) {
+				throw new ClienteUnprocessableException("88888888888888888888888888888888888888888888888888888888888888888888");
+			} catch (ClienteUnprocessableException e) {
 
 				logger.error("esto es un error",e);
 			}

@@ -1,0 +1,3 @@
+[ERROR] 2020-08-06 11:29:33.575 [main]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> Unprocessable Exception (422)
+[ERROR] 2020-08-06 11:30:55.841 [main]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> Unprocessable Exception (422)
+[ERROR] 2020-08-06 11:30:55.844 [main]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> com.orange.brisaEjemplo.exception.ClienteUnprocessableException: Unprocessable Exception (422). Client Unprocesable.. ------------------------------------------------------------------------------------

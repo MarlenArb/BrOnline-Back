@@ -36,11 +36,6 @@ public class ClientRepositoryYesTest {
 	@Order(1)
 	public void addClients() throws Exception {
 		List<Client> c = clientService.getAllSort();
-		logger.access("---- acceso");
-		logger.error("---- error");
-		logger.admon("---- admon");				
-		logger.alert("---- alertas");	
-		logger.activity( "---- actividad");	
 		assertEquals(3, c.size());
 	}
 	
