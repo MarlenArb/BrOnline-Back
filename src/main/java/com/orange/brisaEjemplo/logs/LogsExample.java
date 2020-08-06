@@ -1,6 +1,6 @@
 package com.orange.brisaEjemplo.logs;
 
-import org.junit.platform.commons.function.Try;
+
 
 public class LogsExample  {
 	 
@@ -22,8 +22,7 @@ public class LogsExample  {
 				logger.activity( "---- actividad");	
 				throw new Exception();
 			} catch (Exception e) {
-				// TODO: handle exception
-			
+
 				logger.error("esto es un error",e);
 			}
 		
