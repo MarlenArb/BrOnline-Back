@@ -11,7 +11,6 @@ public class LogsExample  {
 	//private Logger logger = LogManager.getLogger(LogsExample.class);
 	 
 
-	
 	public void initLogs() {
 			
 			try {

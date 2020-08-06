@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" strict="true">
+
+	<Properties>
+		<!-- Ruta para almecenas los "logs" -->
+		<Property name="basePath">.\logs-test</Property>
+		<!-- Configuración del Pattern en los archivos de log -->
+		<Property name="LOG_PATTERN">
+			[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t]	[%logger] --- %c{1}.%M() --- (MESSAGE) ---> %msg%n
+		</Property>
+		<!-- Configuración del tamaño máximo del log -->
+		<Property name="LOG_SIZE">
+			10 MB
+		</Property>
+		<!-- Configuración del número máximo de archivos generiados por el log -->
+		<Property name="LOG_MAX_FILE">
+			20
+		</Property>
+	</Properties>
+
+	<!-- Personalización de los niveles -->
+	<CustomLevels>
+		<CustomLevel name="ACTIVITY" intLevel="350" />
+		<CustomLevel name="ADMON" intLevel="375" />
+		<CustomLevel name="ACCESS" intLevel="400" />
+	</CustomLevels>
+
+	<Appenders>
+
+		<!-- Nombre de nuestro archivo de log -->
+		<RollingFile name="brisa-admon"
+			fileName="${basePath}/brisa-admon-test.log"
+			filePattern="${basePath}/brisa-admon-%d{yyyy-MM-dd}_[%i]-test.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+
+			<!-- Filtra el tipo de nivel que se guardará en el archivo de log -->
+			<LevelRangeFilter minLevel="ADMON" maxLevel="ADMON"
+				onMatch="ACCEPT" onMismatch="DENY" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy
+					size="${LOG_SIZE}" />
+			</Policies>
+			<DefaultRolloverStrategy
+				max="${LOG_MAX_FILE}" />
+		</RollingFile>
+
+		<RollingFile name="brisa-acceso"
+			fileName="${basePath}/brisa-acceso-test.log"
+			filePattern="${basePath}/brisa-acceso-%d{yyyy-MM-dd}_[%i]-test.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<LevelRangeFilter minLevel="ACCESS"
+				maxLevel="ACCESS" onMatch="ACCEPT" onMismatch="DENY" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy
+					size="${LOG_SIZE}" />
+			</Policies>
+			<DefaultRolloverStrategy
+				max="${LOG_MAX_FILE}" />
+		</RollingFile>
+
+		<RollingFile name="brisa-actividad"
+			fileName="${basePath}/brisa-actividad-test.log"
+			filePattern="${basePath}/brisa-actividad-%d{yyyy-MM-dd}_[%i]-test.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<LevelRangeFilter minLevel="ACTIVITY"
+				maxLevel="ACTIVITY" onMatch="ACCEPT" onMismatch="DENY" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="brisa-alerta"
+			fileName="${basePath}/brisa-alerta.log"
+			filePattern="${basePath}/brisa-alerta-%d{yyyy-MM-dd}_[%i].log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<LevelRangeFilter minLevel="WARN" maxLevel="WARN"
+				onMatch="ACCEPT" onMismatch="DENY" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy
+					size="${LOG_SIZE}" />
+			</Policies>
+			<DefaultRolloverStrategy
+				max="${LOG_MAX_FILE}" />
+		</RollingFile>
+
+		<RollingFile name="brisa-error"
+			fileName="${basePath}/brisa-error.log"
+			filePattern="${basePath}/brisa-error-%d{yyyy-MM-dd}_[%i]-test.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR"
+				onMatch="ACCEPT" onMismatch="DENY" />
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+				<SizeBasedTriggeringPolicy
+					size="${LOG_SIZE}" />
+			</Policies>
+			<DefaultRolloverStrategy
+				max="${LOG_MAX_FILE}" />
+		</RollingFile>
+
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%highlight{[%-5level]}{ADMON=green bright, ERROR=red bright, WARN=yellow bright, ACCESS=magenta bright, DEBUG=blue, ACTIVITY=cyan bright,}{BG_White} %style{[%d{HH:mm:ss.SSS}] %logger{36}.%M() --}{cyan} %style{(MESSAGE)}{cyan} %style{--> %msg%n}{cyan} " />
+		</Console>
+
+		<!-- Modo Asincrono -->
+		<Async name="Async">
+			<appender-ref ref="brisa-admon" />
+			<appender-ref ref="brisa-acceso" />
+			<appender-ref ref="brisa-actividad" />
+			<appender-ref ref="brisa-alerta" />
+			<appender-ref ref="brisa-error" />
+		</Async>
+
+	</Appenders>
+	<Loggers>
+
+		<!-- Establece un limite sobre que niveles mostrar en los archivos log -->
+		<Logger name="com.orange.brisaEjemplo" level="debug"
+			additivity="true">
+			<appender-ref ref="brisa-admon" level="debug" />
+			<appender-ref ref="brisa-acceso" level="debug" />
+			<appender-ref ref="brisa-actividad" level="debug" />
+			<appender-ref ref="brisa-alerta" level="debug" />
+			<appender-ref ref="brisa-error" level="debug" />
+
+		</Logger>
+		<!-- Establece un limite sobre que niveles mostrar en la consola -->
+		<Root level="debug">
+			<appender-ref ref="console" />
+		</Root>
+	</Loggers>
+</Configuration>

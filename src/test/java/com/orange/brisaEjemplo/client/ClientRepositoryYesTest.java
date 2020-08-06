@@ -14,6 +14,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.jdbc.Sql;
 
 import com.orange.brisaEjemplo.entity.Client;
+import com.orange.brisaEjemplo.logs.CustomLogs;
 import com.orange.brisaEjemplo.repository.ClientRepository;
 import com.orange.brisaEjemplo.service.ClientService;
 
@@ -29,11 +30,17 @@ public class ClientRepositoryYesTest {
 	@Autowired
 	private ClientService clientService;
 	
+	 private static CustomLogs logger= new CustomLogs();
 	
 	@Test
 	@Order(1)
 	public void addClients() throws Exception {
 		List<Client> c = clientService.getAllSort();
+		logger.access("---- acceso");
+		logger.error("---- error");
+		logger.admon("---- admon");				
+		logger.alert("---- alertas");	
+		logger.activity( "---- actividad");	
 		assertEquals(3, c.size());
 	}
 	
