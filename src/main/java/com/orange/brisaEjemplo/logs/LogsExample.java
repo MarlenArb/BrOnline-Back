@@ -2,11 +2,11 @@ package com.orange.brisaEjemplo.logs;
 
 import com.orange.brisaEjemplo.exception.ClienteUnprocessableException;
 
-public class LogsExample  {
+public class LogsExample {
 	 
 	//@Autowired
 	//private CustomLogs logger;
-	 private static CustomLogs logger= new CustomLogs();
+	 private static CustomLogs logger= new CustomLogs(LogsExample.class);
 	  
 	//private Logger logger = LogManager.getLogger(LogsExample.class);
 	 

@@ -1,3 +1,2 @@
-[ACCESS] 2020-08-06 11:33:42.742 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.access() --- (MESSAGE) ---> ---- acceso
-[ACCESS] 2020-08-06 11:37:13.080 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.access() --- (MESSAGE) ---> ---- acceso
-[ACCESS] 2020-08-06 11:37:35.355 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.access() --- (MESSAGE) ---> ---- acceso
+[ACCESS] 2020-08-06 12:53:41.872 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.access() --- (MESSAGE) ---> ---- acceso
+[ACCESS] 2020-08-06 12:54:12.513 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.access() --- (MESSAGE) ---> ---- acceso

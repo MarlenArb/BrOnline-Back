@@ -9,11 +9,21 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CustomLogs{
-	 
 	
-	private Logger logger = LogManager.getLogger(CustomLogs.class);
+	public Logger logger = LogManager.getLogger();
 	
-	public void access(String message) {
+	
+	public CustomLogs() {
+	}
+	
+	
+	public CustomLogs(Class<?> myClass) {
+		logger = LogManager.getLogger(myClass);
+		
+	}
+
+
+	public void  access(String message) {
 		logger.log(Level.getLevel("ACCESS"),message);	
 	}
 	
@@ -39,5 +49,6 @@ public class CustomLogs{
 	
 	public void error(Exception error) {
 		logger.error(error);	
-	}	
+	}
+	
 }

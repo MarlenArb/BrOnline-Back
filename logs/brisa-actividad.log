@@ -1,3 +1,2 @@
-[ACTIVITY] 2020-08-06 11:33:42.745 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.activity() --- (MESSAGE) ---> ---- actividad
-[ACTIVITY] 2020-08-06 11:37:13.080 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.activity() --- (MESSAGE) ---> ---- actividad
-[ACTIVITY] 2020-08-06 11:37:35.356 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.activity() --- (MESSAGE) ---> ---- actividad
+[ACTIVITY] 2020-08-06 12:53:41.875 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.activity() --- (MESSAGE) ---> ---- actividad
+[ACTIVITY] 2020-08-06 12:54:12.515 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.activity() --- (MESSAGE) ---> ---- actividad
