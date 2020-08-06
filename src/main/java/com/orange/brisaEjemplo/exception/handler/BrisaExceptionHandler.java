@@ -59,8 +59,6 @@ public class BrisaExceptionHandler extends ResponseEntityExceptionHandler{
 	@ExceptionHandler({UnprocessableException.class})
 	@ResponseBody
 	public ExceptionResponse unprocessableRequest(HttpServletRequest request, Exception exception) {
-		System.out.println("****************************************************************************");
-		System.out.println(exception);
 		return new ExceptionResponse(exception, request.getRequestURI());
 	}
 	

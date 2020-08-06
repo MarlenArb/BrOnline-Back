@@ -1,6 +1,6 @@
-[ERROR] 2020-08-06 12:53:41.873 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-06 12:53:41.878 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> Unprocessable Exception (422)
-[ERROR] 2020-08-06 12:53:41.879 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-06 12:59:32.713 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-06 12:59:32.722 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> Unprocessable Exception (422)
+[ERROR] 2020-08-06 12:59:32.723 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> esto es un error
 com.orange.brisaEjemplo.exception.ClienteUnprocessableException: Unprocessable Exception (422). Client Unprocesable.. 88888888888888888888888888888888888888888888888888888888888888888888
 	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:22) [classes/:?]
 	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
@@ -9,9 +9,18 @@ com.orange.brisaEjemplo.exception.ClienteUnprocessableException: Unprocessable E
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
-[ERROR] 2020-08-06 12:54:12.514 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> ---- error
-[ERROR] 2020-08-06 12:54:12.517 [restartedMain]	[com.orange.brisaEjemplo.logs.CustomLogs] --- CustomLogs.error() --- (MESSAGE) ---> Unprocessable Exception (422)
-[ERROR] 2020-08-06 12:54:12.517 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> esto es un error
+[ERROR] 2020-08-06 13:05:59.562 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-06 13:05:59.564 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> esto es un error
+com.orange.brisaEjemplo.exception.ClienteUnprocessableException: Unprocessable Exception (422). Client Unprocesable.. 88888888888888888888888888888888888888888888888888888888888888888888
+	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:22) [classes/:?]
+	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+[ERROR] 2020-08-06 13:14:06.473 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> ---- error
+[ERROR] 2020-08-06 13:14:06.479 [restartedMain]	[com.orange.brisaEjemplo.logs.LogsExample] --- LogsExample.error() --- (MESSAGE) ---> esto es un error
 com.orange.brisaEjemplo.exception.ClienteUnprocessableException: Unprocessable Exception (422). Client Unprocesable.. 88888888888888888888888888888888888888888888888888888888888888888888
 	at com.orange.brisaEjemplo.logs.LogsExample.initLogs(LogsExample.java:22) [classes/:?]
 	at com.orange.brisaEjemplo.BrisaEjemploApplication.main(BrisaEjemploApplication.java:20) [classes/:?]
